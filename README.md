@@ -5,7 +5,7 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/DeepInv.git
+git clone https://github.com/ElenaNiC/DeepInv.git
 cd DeepInv
 ```
 
