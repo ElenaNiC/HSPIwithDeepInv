@@ -53,6 +53,8 @@ This repository contains scripts and utilities for preparing, organizing, and re
 - `measurements_formatted/`: processed measurement arrays ready for dataset loading or inversion.
 - `metadata/`: acquisition metadata JSON files used to decode pattern ordering and imaging settings.
 
+
+The raw measurements, reconstructions and metadata files can be downloaded from the PILOT warehouse (see [download_data.py](`download_data.py`) and [good_cubeIDs.py](`good_cubeIDs.py`))
 ## Script overview
 
 ### `dataset.py`
