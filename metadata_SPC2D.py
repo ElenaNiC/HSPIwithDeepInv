@@ -456,11 +456,12 @@ class AcquisitionParameters:
         
         self.patterns = self.patterns.strip('[').strip(']').split(', ')
         self.patterns = [int(s) for s in self.patterns if s.isdigit()]
-        try:
-            self.patterns_wp = self.patterns_wp.text.strip('[').strip(']').split(', ')
-            self.patterns_wp = [int(s) for s in self.patterns_wp if s.isdigit()]
-        except:
-            print('patterns_wp has no attribute ''strip''')    
+        # try:
+        #     self.patterns_wp = self.patterns_wp.text.strip('[').strip(']').split(', ')
+        #     self.patterns_wp = [int(s) for s in self.patterns_wp if s.isdigit()]
+        # except:
+        #     print('patterns_wp has no attribute ''strip''')    
+
 
         if self.wavelengths:
             self.wavelengths = (
@@ -486,32 +487,32 @@ class AcquisitionParameters:
             print('measurement_time not present in metadata.'
             ' Reading data in legacy mode.')
 
-        if self.mask_index:
-            self.mask_index = (
-                self.mask_index.strip('[').strip(']').split(', '))
-            self.mask_index = to_float(self.mask_index)
-            self.mask_index = np.asarray(self.mask_index)
-        else:
-            print('mask_index not present in metadata.'
-            ' Reading data in legacy mode.')
+        # if self.mask_index:
+        #     self.mask_index = (
+        #         self.mask_index.strip('[').strip(']').split(', '))
+        #     self.mask_index = to_float(self.mask_index)
+        #     self.mask_index = np.asarray(self.mask_index)
+        # else:
+        #     print('mask_index not present in metadata.'
+        #     ' Reading data in legacy mode.')
         
-        if self.x_mask_coord:
-            self.x_mask_coord = (
-                self.x_mask_coord.strip('[').strip(']').split(', '))
-            self.x_mask_coord = to_float(self.x_mask_coord)
-            self.x_mask_coord = np.asarray(self.x_mask_coord)
-        else:
-            print('x_mask_coord not present in metadata.'
-            ' Reading data in legacy mode.')
+        # if self.x_mask_coord:
+        #     self.x_mask_coord = (
+        #         self.x_mask_coord.strip('[').strip(']').split(', '))
+        #     self.x_mask_coord = to_float(self.x_mask_coord)
+        #     self.x_mask_coord = np.asarray(self.x_mask_coord)
+        # else:
+        #     print('x_mask_coord not present in metadata.'
+        #     ' Reading data in legacy mode.')
         
-        if self.y_mask_coord:
-            self.y_mask_coord = (
-                self.y_mask_coord.strip('[').strip(']').split(', '))
-            self.y_mask_coord = to_float(self.y_mask_coord)
-            self.y_mask_coord = np.asarray(self.y_mask_coord)
-        else:
-            print('y_mask_coord not present in metadata.'
-            ' Reading data in legacy mode.')
+        # if self.y_mask_coord:
+        #     self.y_mask_coord = (
+        #         self.y_mask_coord.strip('[').strip(']').split(', '))
+        #     self.y_mask_coord = to_float(self.y_mask_coord)
+        #     self.y_mask_coord = np.asarray(self.y_mask_coord)
+        # else:
+        #     print('y_mask_coord not present in metadata.'
+        #     ' Reading data in legacy mode.')
         
     @staticmethod
     def readable_pattern_order(acquisition_params_dict: dict) -> dict:
