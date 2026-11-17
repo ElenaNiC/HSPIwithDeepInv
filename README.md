@@ -1,4 +1,6 @@
-# DeepInv spectral imaging scripts
+# Hyperspectral Single Pixel Image reconstruction 
+
+Scripts for accessing and formatting raw hyperspectral data and reconstructions so that they then may be used to train denoisers
 
 ## Setup
 
