@@ -222,4 +222,12 @@ data/
 ground_truth/
 measurements/
 metadata/
-
+dataset.py
+ground_truth_formatted/
+measurements_formatted/
+measurements_formatted_old/
+metadata/
+ground_truth_formatted/
+measurements_formatted/
+measurements_formatted_old/
+reconstructions_check/

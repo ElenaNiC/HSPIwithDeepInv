@@ -12,11 +12,11 @@ import deepinv as dinv
 device = dinv.utils.get_freer_gpu() if torch.cuda.is_available() else "cpu"
 
 # %% Download / access images
-# Grayscale images of size (32, 32), no normalization to keep values in (0,1)
-transform = transform_gray_norm(img_size=32, normalize=False)
+
+img_size = 32
+transform = transform_gray_norm(img_size=img_size, normalize=False)
 
 # Create dataset and loader (expects class folder 'images/test/')
-img_size = 32
 batch_size = 7
 data_root = 'C:/Users/ceidigh/Documents/PFE/Code/data'
 dataloader = data_loaders_stl10(data_root, img_size=img_size, batch_size=batch_size, seed=7, shuffle=False, download=True, normalize=False)
@@ -26,7 +26,7 @@ x, _ = next(iter(dataloader['train']))
 print(f"Ground-truth images: {x.shape}")
 # %% Plot second image
 i_plot = 1
-imagesc(x[i_plot, 0, :, :], r"$32\times 32$ image $X$")
+imagesc(x[i_plot, 0, :, :], rf"${img_size}\times {img_size}$ image $X$")
 
 # %% Simulate 2d hadamard acquisition -> K = 512 (< N = 32^2 = 1024) 
 
@@ -35,8 +35,9 @@ import spyrit.core.noise as noise
 from spyrit.core.prep import UnsplitRescale
 
 x = x.to(device)
+M = 512
 # generate a 32x32 x 32x32 Hadamard, take 512 rows
-meas_spyrit = HadamSplit2d(32, 512, device=device, reshape_output=True)
+meas_spyrit = HadamSplit2d(img_size, M, device=device, reshape_output=True)
 alpha = 50  # image intensity
 meas_spyrit.noise_model = noise.Poisson(alpha)
 y = meas_spyrit(x)

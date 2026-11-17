@@ -68,6 +68,8 @@ m = np.load("m.npy")
 Nx, L = m.shape
 m.shape
 #%%
+
+import matplotlib.pyplot as plt
 # direct reconstruction 
 H = walsh_matrix_2d(N)   #fix 
 f = np.matmul(H,m)
@@ -130,7 +132,7 @@ m_reordered = m_reordered.reshape(m_reordered.shape[-1], 1, m_reordered.shape[0]
 
 
 x_pinv = meas_deepinv.A_dagger(m_reordered.to(torch.float32) / norm)
-imagesc(x_pinv[100, 0,:,:].detach().cpu(), "presummed direct reconstruction using deepinv ")
+imagesc(x_pinv[0, 0,:,:].detach().cpu(), "presummed direct reconstruction using deepinv ")
 
 # %% AND THEN TRY WITH RAM 
 
