@@ -84,12 +84,6 @@ It is mainly an experimental/research script for testing different reconstructio
 ### `tools.py`
 This file contains shared helper utilities used across the project.
 
-Key pieces include:
-
-- `binArray(...)`: bins an array along a chosen axis with a user-selected reduction function.
-- `read_acquisitionData(...)`: parses JSON metadata and reconstructs an acquisition-parameter object.
-- `AcquisitionParameters`: a dataclass storing pattern order, dimensions, wavelengths, timing information, and other scan parameters.
-- helper logic for loading acquisition metadata and working with the raw measurement structure.
 
 ### `metadata_SPC2D.py`
 File for decoding raw files produced by the acquisition system.
