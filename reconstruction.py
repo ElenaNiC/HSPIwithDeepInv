@@ -60,7 +60,6 @@ from tools import binArray
 m_reordered.shape
 m_reordered = binArray(m_reordered, -1, 4, 4, np.sum)
 m_reordered.shape
-
 np.save("m.npy", m_reordered,)
 #%% LOAD PRE FORMATTED DATA
 

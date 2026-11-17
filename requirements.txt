@@ -1,0 +1,12 @@
+numpy
+pillow
+imageio
+matplotlib
+scipy
+# ML / reconstruction dependencies
+# Install the CPU or CUDA version of torch that matches your system.
+torch
+torchvision
+deepinv
+spyrit
+dataclasses-json

@@ -1,0 +1,279 @@
+Found 24 valid samples.
+Formatting samples 0 to 24 (24 samples)...
+Formatting cube 0: 20€_banknote_Back_of_PrincessEurope_ill_angle_3_64x64_ti_10ms_zoom_x1...
+
+--------Sample:  0
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 1: Apple_pos_1-im_64x64_Zoom_x1_ti_10ms_tc_0.5ms...
+
+--------Sample:  1
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 2: Bitten_Apple_t_20min-im_64x64_Zoom_x1_ti_10ms_tc_0.5ms...
+
+--------Sample:  2
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 3: Blob_ti_120ms_zoomx12_objx10...
+
+--------Sample:  3
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 4: Blob_ti_60ms_zoomx6_objx10...
+
+--------Sample:  4
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 5: Cat_LinearColoredFilter...
+
+--------Sample:  5
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 6: Horse_LinearColoredFilter...
+
+--------Sample:  6
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 7: SeimensStar_whiteLamp_linear_color_filter...
+
+--------Sample:  7
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 8: Thorlabs_box_ti_10ms_without_telecentric...
+
+--------Sample:  8
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 9: color_checker_full_FOV_64x64_Zoom_x1_ti_15ms_tc_0.2ms...
+
+--------Sample:  9
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 10: color_checker_ti_1ms_without_telecentric_2...
+
+--------Sample:  10
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 11: full_hologram64x64_ti_10ms_zoom_x1...
+
+--------Sample:  11
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 12: full_hologram64x64_ti_5ms_zoom_x1...
+
+--------Sample:  12
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 13: full_hologram_90Deg64x64_ti_5ms_zoom_x1...
+
+--------Sample:  13
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 14: green_Tree_leaf_ti_10ms_zoomx4_objx40...
+
+--------Sample:  14
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 15: green_Tree_leaf_ti_20ms_zoomx4_objx40...
+
+--------Sample:  15
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 16: obj_CMY_geometrical_form_reflexion_source_white_LED_Walsh_im_64x64_ti_50ms_zoom_x1...
+
+--------Sample:  16
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 18: obj_RGB_geometrical_form_reflexion_source_white_LED_Walsh_im_64x64_ti_50ms_zoom_x1...
+
+--------Sample:  18
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 19: obj_RGB_geometrical_form_source_Thorlabs_White_halogen_lamp_Walsh_im_64x64_ti_40ms_zoom_x1...
+
+--------Sample:  19
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 20: obj_RGB_geometrical_form_trans_source_white_LED_Walsh_im_64x64_ti_2ms_zoom_x1...
+
+--------Sample:  20
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 21: obj_bacteriocyte_source_Thorlabs_White_halogen_lamp_f80mm-P2_Walsh_im_64x64_ti_400ms_zoom_x4...
+
+--------Sample:  21
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 22: obj_bacteriocyte_trans_cluster_centered_source_Thorlabs_White_halogen_lamp_f80mm-P2_Walsh_im_64x64_ti_50ms_zoom_x4...
+
+--------Sample:  22
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting cube 23: obj_bacteriocyte_trans_source_Thorlabs_White_halogen_lamp_f80mm-P2_Walsh_im_64x64_ti_60ms_zoom_x4...
+
+--------Sample:  23
+     raw_data =  (8192, 2048)
+     GT =  (64, 64, 512)
+
+     m_reordered:  (8192, 2048)
+     m_unsplit:  (4096, 2048)
+     m_binned:  (4096, 512)
+     m_subsampled:  (1024, 512)
+
+
+Formatting complete.

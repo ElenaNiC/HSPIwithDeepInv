@@ -1,4 +1,41 @@
 # DeepInv spectral imaging scripts
+
+## Setup
+
+### Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/DeepInv.git
+cd DeepInv
+```
+
+### Create and activate a virtual environment
+
+On Linux/macOS:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+On Windows (PowerShell):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### Install dependencies
+
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+This project’s Python requirements are listed in [requirements.txt](requirements.txt). 
+
+# Overview
+
 This repository contains scripts and utilities for preparing, organizing, and reconstructing spectral data acquired with a Hadamard-coded acquisition setup. The general workflow is:
 
 1. Download raw spectral measurements and metadata.
@@ -23,7 +60,7 @@ Main dataset-building script. It defines `format_dataset(...)`, which scans the 
 
 Defines `SpectralDataset`, a PyTorch `Dataset` that loads matching `.npy` files from the formatted folders and returns `(x, y)` pairs for training or evaluation.
 
-For more details or to format data manually, see following script
+For more details or to format data manually, see following script. 
 
 ### `format_data.py`
 More manual, example-driven formatting script. It shows how to:

@@ -54,9 +54,9 @@ print("m_unsplit: ", m_unsplit.shape)
 from tools import binArray
 m_binned = binArray(m_unsplit, -1, 4, 4, np.sum)
 
-K = 128 # or whatever number of measures you want to use
+K = 1024 # or whatever number of measures you want to use
 m_subsampled = m_binned[0:K, :]
-np.save(f"measurements_formatted/y_{K}", m_subsampled)
+np.save(f"measurements_formatted/y_{K}_17", m_subsampled)
 
 
 
@@ -67,24 +67,26 @@ os.makedirs("ground_truth_formatted", exist_ok=True)
 # bin spectrally
 gt = np.load("./ground_truth/obj_Cat_bicolor_thin_overlap_source_white_LED_Walsh_im_64x64_ti_9ms_zoom_x1_had_reco.npz", allow_pickle=True)["arr_0"]
 gt = binArray(gt, -1, 4, 4, np.sum)
-np.save(f"ground_truth_formatted/cube", gt)
+np.save(f"ground_truth_formatted/cube17", gt)
 
 
 # %% ---------------- CHECK --------------------------------------------------------------------------------
 import matplotlib.pyplot as plt
 from spyrit.misc.walsh_hadamard import walsh_matrix_2d
 
-gt_recon = np.load("ground_truth_formatted/cube.npy").squeeze()
-y = np.load(f"measurements_formatted/y_{K}.npy")
+i = 17
+gt_recon = np.load(f"ground_truth_formatted/cube{i}.npy").squeeze()
+y = np.load(f"measurements_formatted/y_{K}_{i}.npy")
 
 
 print("cube:", gt_recon.shape)
-print("measurements:", y.shape)
+print("sybsampled measurements:", y.shape)
 Nx, Ny, L = gt_recon.shape
 
 
 plt.imshow(gt_recon.sum(-1)[:,:])
 plt.title("GT")
+plt.figure()
 
 # reconstruct
 H = walsh_matrix_2d(Nx)
@@ -92,5 +94,7 @@ f = np.matmul(H,m_binned.sum(-1))
 f_presum= np.reshape(f, (Nx,Ny))// (Nx*Ny)
 
 plt.imshow(f_presum) # plot wavelength sum
-plt.title("presummed Direct Reconstruction")
+plt.title("presummed Direct Reconstruction (all measures)")
+
+
 # %%
